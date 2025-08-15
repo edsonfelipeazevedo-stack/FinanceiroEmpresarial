@@ -1,0 +1,104 @@
+{
+  "info": {
+    "name": "FinanceiroEmpresarial API",
+    "_postman_id": "12345678-abcd-efgh-ijkl-9876543210",
+    "description": "Coleção de testes para a API FinanceiroEmpresarial",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Categorias",
+      "item": [
+        {
+          "name": "Criar Categoria",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Alimentação\"\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7278/api/categorias",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "7278",
+              "path": ["api", "categorias"]
+            }
+          }
+        },
+        {
+          "name": "Listar Categorias",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://localhost:7278/api/categorias",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "7278",
+              "path": ["api", "categorias"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Transações",
+      "item": [
+        {
+          "name": "Criar Transação",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"descricao\": \"Compra de mercado\",\n    \"valor\": 150.75,\n    \"data\": \"2025-08-12\",\n    \"categoriaId\": 1\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7278/api/transacoes",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "7278",
+              "path": ["api", "transacoes"]
+            }
+          }
+        },
+        {
+          "name": "Listar Transações",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://localhost:7278/api/transacoes",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "7278",
+              "path": ["api", "transacoes"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Relatórios",
+      "item": [
+        {
+          "name": "Relatório por Categoria",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://localhost:7278/api/relatorios/por-categoria",
+              "protocol": "https",
+              "host": ["localhost"],
+              "port": "7278",
+              "path": ["api", "relatorios", "por-categoria"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
