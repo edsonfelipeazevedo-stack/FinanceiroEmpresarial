@@ -10,9 +10,6 @@ Sistema de gestão financeira empresarial desenvolvido em **.NET 8**, com API RE
 5. [Execução](#-execução)  
 6. [Testes](#-testes)  
 7. [Endpoints da API](#-endpoints-da-api)  
-8. [Próximos Passos](#-próximos-passos)  
-9. [Contribuição](#-contribuição)  
-10. [Licença](#-licença)  
 
 ---
 
